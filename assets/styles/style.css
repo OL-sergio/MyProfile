@@ -1,0 +1,11 @@
+.gradient {
+  width: 100vw;
+  height: 83vh;
+  background: #57c785;
+
+  background: linear-gradient(
+    90deg,
+    rgba(87, 199, 133, 1) 35%,
+    rgba(42, 123, 155, 1) 35%
+  );
+}
