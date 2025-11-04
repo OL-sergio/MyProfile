@@ -1,11 +1,24 @@
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(149, 124, 98);
+}
+
 .gradient {
   width: 100vw;
-  height: 83vh;
-  background: #57c785;
-
+  height: 65vh;
+  color: rgb(243, 226, 197);
+  background: rgb(244, 235, 221);
   background: linear-gradient(
     90deg,
-    rgba(87, 199, 133, 1) 35%,
-    rgba(42, 123, 155, 1) 35%
+    rgb(241, 216, 174) 40%,
+    rgb(133, 123, 111) 40%
   );
+}
+
+.color-profile {
+  background-color: rgb(243, 226, 197);
+  color: rgb(149, 124, 98);
+}
+.color-details {
+  background-color: rgb(133, 123, 111);
 }
