@@ -14,72 +14,81 @@
   </head>
   <body>
     <!-- header -->
-    <section>
+    <section id="header">
       <div class="container">
         <header
           class="d-flex flex-wrap justify-content-center mx-0 py-4 my-4"
           aria-label="Site header"
         >
           <a
-            href="/"
+            href="#"
             class="d-flex align-items-center mb-1 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
             aria-label="Home"
           >
-            <img
-              src="./assets/icons/braces.svg"
-              alt="Braces"
-              width="34"
-              height="30"
-              class="bi me-2"
+            <span
               aria-hidden="true"
-            />
-            <span class="fs-3"
-              >Sérgio Oliveira <span class="fs-6"> / Developer </span></span
+              style="
+                display: inline-block;
+                width: 34px;
+                height: 50px;
+                margin-right: 10px;
+                background-color: rgb(3, 24, 250);
+                -webkit-mask: url('./assets/icons/braces.svg') no-repeat center /
+                  contain;
+                mask: url('./assets/icons/braces.svg') no-repeat center /
+                  contain;
+              "
+            ></span>
+
+            <span class="fs-3" style="color: rgb(149, 124, 98)"
+              >Sérgio Oliveira <span class="fs-6"> / Programador </span></span
             >
           </a>
-          <ul class="nav nav-pills fs-6 gap-3">
-            <li class="nav-item">
+          <div class="nav nav-pills fs-6 gap-3">
+            <div class="nav-item">
               <a
                 href="#about"
-                class="nav-link text-uppercase link-body-emphasis text-decoration-none"
+                class="nav-link text-uppercase"
+                style="color: rgb(149, 124, 98)"
                 >Sobre mim</a
               >
-            </li>
-            <li class="nav-item">
+            </div>
+            <div class="nav-item">
               <a
                 href="#resume"
-                class="nav-link text-uppercase link-body-emphasis text-decoration-none"
+                class="nav-link text-uppercase"
+                style="color: rgb(149, 124, 98)"
                 >Currículo</a
               >
-            </li>
-            <li class="nav-item">
+            </div>
+            <div class="nav-item">
               <a
                 href="#projects"
-                class="nav-link text-uppercase link-body-emphasis text-decoration-none"
+                class="nav-link text-uppercase"
+                style="color: rgb(149, 124, 98)"
                 >Projetos</a
               >
-            </li>
-            <li class="nav-item">
+            </div>
+            <div class="nav-item">
               <a
                 href="#contact"
-                class="nav-link text-uppercase link-body-emphasis text-decoration-none"
+                class="nav-link text-uppercase"
+                style="color: rgb(149, 124, 98)"
                 >Contato</a
               >
-            </li>
-          </ul>
+            </div>
+          </div>
         </header>
       </div>
     </section>
     <!-- hero -->
-    <section>
+    <section id="hero">
       <div class="gradient">
-        <div
-          class="container a d-flex justify-content-center align-items-center flex-grow-1 px-5 py-5 h-100"
-        >
-          <div class="row m-0 p-0" style="align-self: center">
+        <div class="container flex px-5 py-5" style="align-self: center">
+          <div class="row m-1 p-1" style="align-self: center">
             <div
-              class="col-12 col-sm-1 col-xxl-6 d-flex flex-column align-items-center m-0 p-0 color-profile"
-              style="width: 397px; height: 500px"
+              class="col-12 col-sm-5 col-xxl-2 col-dm-3 col-sm-5 d-flex flex-column align-items-center m-0 p-0 color-profile"
+              style="width: 400px; height: 600px"
             >
               <img
                 src="./assets/images/my-profile.png"
@@ -112,49 +121,118 @@
                   Programador
                 </h5>
                 <div
-                  class="mt-5 w-100 d-flex flex-column align-items-bottom align-self-baseline"
-                  style="width: 10px; height: 55px"
+                  class="mt-5 w-100 d-flex flex-column align-items-bottom"
+                  style="width: 10px; height: 70px"
                 >
                   <div
                     class="gap-4 d-flex align-self-baseline align-items-center justify-content-center"
                     style="
-                      background-color: aliceblue;
+                      background-color: rgb(255, 255, 255);
                       width: 100%;
                       height: 150px;
                       display: flex;
                     "
                   >
-                    <a href="#" class="p-0">
-                      <img
-                        src="./assets/icons/facebook.svg"
-                        alt="Facebook"
-                        width="18"
-                        height="18"
-                      />
+                    <a
+                      href="https://www.udemy.com/user/sergio-filipe-da-cunha-oliveira/"
+                      aria-label="Udemy"
+                      class="p-0"
+                      style="display: inline-block; width: 18px; height: 18px"
+                    >
+                      <span
+                        aria-hidden="true"
+                        style="
+                          display: inline-block;
+                          width: 18px;
+                          height: 18px;
+                          background-color: rgb(149, 124, 98);
+                          -webkit-mask: url('./assets/icons/udemy.svg')
+                            no-repeat center / contain;
+                          mask: url('./assets/icons/udemy.svg') no-repeat center /
+                            contain;
+                        "
+                      ></span>
+                      <span class="visually-hidden">Udemy</span>
                     </a>
-                    <a href="#" class="p-0">
-                      <img
-                        src="./assets/icons/cloud.svg"
-                        alt="Cloud"
-                        width="18"
-                        height="18"
-                      />
+                    <a
+                      href="https://drive.google.com/drive/folders/1-SS5XW_qQgPNBl8mXvhhONFKOceneOjF"
+                      class="p-0"
+                      style="display: inline-block; width: 18px; height: 18px"
+                    >
+                      <span
+                        aria-hidden="true"
+                        style="
+                          display: inline-block;
+                          width: 18px;
+                          height: 18px;
+                          background-color: rgb(149, 124, 98);
+                          -webkit-mask: url('./assets/icons/cloud.svg')
+                            no-repeat center / contain;
+                          mask: url('./assets/icons/cloud.svg') no-repeat center /
+                            contain;
+                        "
+                      ></span>
+                      <span class="visually-hidden">Cloud</span>
                     </a>
-                    <a href="#" class="p-0">
-                      <img
-                        src="./assets/icons/linkedin.svg"
-                        alt="LinkedIn"
-                        width="18"
-                        height="18"
-                      />
+                    <a
+                      href="https://www.linkedin.com/in/sergio-dev-android-junior/"
+                      class="p-0"
+                      style="display: inline-block; width: 18px; height: 18px"
+                    >
+                      <span
+                        aria-hidden="true"
+                        style="
+                          display: inline-block;
+                          width: 18px;
+                          height: 18px;
+                          background-color: rgb(149, 124, 98);
+                          -webkit-mask: url('./assets/icons/linkedin.svg')
+                            no-repeat center / contain;
+                          mask: url('./assets/icons/linkedin.svg') no-repeat
+                            center / contain;
+                        "
+                      ></span>
+                      <span class="visually-hidden">LinkedIn</span>
                     </a>
-                    <a href="#" class="p-0">
-                      <img
-                        src="./assets/icons/github.svg"
-                        alt="GitHub"
-                        width="18"
-                        height="18"
-                      />
+                    <a
+                      href="https://github.com/OL-sergio"
+                      class="p-0"
+                      style="display: inline-block; width: 18px; height: 18px"
+                    >
+                      <span
+                        aria-hidden="true"
+                        style="
+                          display: inline-block;
+                          width: 18px;
+                          height: 18px;
+                          background-color: rgb(149, 124, 98);
+                          -webkit-mask: url('./assets/icons/github.svg')
+                            no-repeat center / contain;
+                          mask: url('./assets/icons/github.svg') no-repeat
+                            center / contain;
+                        "
+                      ></span>
+                      <span class="visually-hidden">GitHub</span>
+                    </a>
+                    <a
+                      href="https://developers.google.com/profile/u/Ol-sergio?hl=pt-br"
+                      class="p-0"
+                      style="display: inline-block; width: 18px; height: 18px"
+                    >
+                      <span
+                        aria-hidden="true"
+                        style="
+                          display: inline-block;
+                          width: 18px;
+                          height: 18px;
+                          background-color: rgb(149, 124, 98);
+                          -webkit-mask: url('./assets/icons/android2.svg')
+                            no-repeat center / contain;
+                          mask: url('./assets/icons/android2.svg') no-repeat
+                            center / contain;
+                        "
+                      ></span>
+                      <span class="visually-hidden">Android</span>
                     </a>
                   </div>
                 </div>
@@ -162,22 +240,22 @@
             </div>
             <div
               class="col-lg-8 color-details"
-              style="align-self: center; width: 500px"
+              style="align-self: center; width: 625px; height: 600px"
             >
               <p
-                class="fw-bold text-body-emphasis mb-0 ms-2 d-flex justify-content-md-start align-items-center"
+                class="fw-bold m-0 ms-0 d-flex justify-content-md-start align-items-center"
                 style="
                   width: 200px;
                   height: 200px;
                   font-size: 100px;
                   text-align: center;
                   overflow: hidden;
-                  white-space: nowrap;
+                  color: rgb(149, 124, 98);
                 "
               >
                 Olá
               </p>
-              <h3 class="ms-3 mb-5">Meu perfil e meus projetos</h3>
+              <h3 class="ms-0 mb-5">Meu perfil e meus projetos</h3>
               <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                 <button
                   data-bs-toggle="button"
@@ -189,6 +267,9 @@
                     height: 40px;
                     text-align: center;
                     text-transform: uppercase;
+                    background-color: rgb(13, 24, 250);
+                    outline: 2px solid rgb(255, 255, 255);
+                    color: rgb(255, 255, 255);
                   "
                 >
                   Currículo
@@ -196,21 +277,21 @@
                 <button
                   data-bs-toggle="button"
                   onkeydown="return true;"
-                  class="btn fs-6 btn-outline-light btn-lg mb-4 px-4 me-md-2 d-flex align-items-center justify-content-center"
+                  class="btn fs-6 btn-outline btn-lg mb-4 px-4 me-md-2 d-flex align-items-center justify-content-center"
                   style="
                     border-radius: 4rem;
                     width: 155px;
                     height: 40px;
                     text-align: center;
                     text-transform: uppercase;
+                    outline: 1px solid rgb(149, 124, 98);
+                    color: rgb(149, 124, 98);
                   "
                 >
-                  Projectos
+                  Projetos
                 </button>
               </div>
-              <div
-                class="mt-4 d-flex flex-column justify-content-center h-300 w-500"
-              >
+              <div class="mt-4 d-flex flex-column justify-content-center">
                 <p class="lead fs-6 m-0 p-0">
                   O meu objetivo é desenvolver competências sólidas na
                   programação Android e iniciar uma carreira que me permita
@@ -221,7 +302,7 @@
                 </p>
               </div>
               <div>
-                <p class="lead fs-6 m-0 p-0">
+                <p class="lead fs-6 mt-4 pb-0">
                   Acredito que o progresso é feito de pequenos passos diários, e
                   estou determinado a tornar-me, a cada dia, um profissional
                   mais completo e preparado para os desafios do mercado.
@@ -234,90 +315,174 @@
     </section>
 
     <!-- footer -->
-    <section>
-      <div class="container-sm container-fluid">
-        <footer class="row row-cols-lg-7 row-cols-sm-1 row-cols-md-5 py-3 my-5">
-          <div class="d-flex flex-row mb-3">
+    <section id="footer">
+      <div class="container py-4 my-4">
+        <footer class="row row-col-lg-1 row-col-sm-1 row-cols-xxl-5 my-5 mx-5">
+          <div class="col mb-1 my-1 mx-0">
             <h6>
-              <span class="col">
-                <img
-                  src="./assets/icons/c-circle.svg"
-                  alt="Braces"
-                  width="18"
-                  height="18"
-                  class="bi me-1 mb-1"
-                  aria-hidden="true"
-                />
-              </span>
+              <svg
+                aria-hidden="true"
+                style="
+                  display: inline-block;
+                  width: 18px;
+                  height: 18px;
+                  margin-right: 3px;
+                  margin-bottom: 4px;
+                  background-color: rgb(149, 124, 98);
+                  -webkit-mask: url('./assets/icons/c-circle.svg') no-repeat
+                    center / contain;
+                  mask: url('./assets/icons/c-circle.svg') no-repeat center /
+                    contain;
+                "
+              ></svg>
+
               2025 por Sérgio Oliveira.
             </h6>
           </div>
           <div class="row d-flex flex-grow-1 mb-3"></div>
-          <div class="row mb-3 my-1">
+          <div class="row mb-1 my-1">
             <h6>Telefone</h6>
-            <ul class="nav">
-              <li class="nav-item mx-2">
-                <a href="#" class="nav-link p-0 text-body-secondary"
+            <div class="nav">
+              <div class="nav-item mx-2">
+                <a
+                  href="#"
+                  class="nav-link p-0"
+                  style="color: rgb(149, 124, 98)"
                   ><h6>+351 939416328</h6></a
                 >
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
           <div class="col mb-3 my-1">
             <h6>Email</h6>
-            <ul class="nav">
-              <li class="nav-item">
-                <a href="#" class="nav-link p-0 text-body-secondary"
+
+            <div class="nav">
+              <div class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link p-0"
+                  style="color: rgb(149, 124, 98)"
                   ><h6>a18074@alunos.ipca.pt</h6></a
                 >
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
           <div class="row my-1">
             <div>
               <h6>Redes Sociais</h6>
-              <ul class="nav flex-row align-items-stretch">
-                <li class="nav-item mx-1">
-                  <a href="#" class="nav-link p-0">
-                    <img
-                      src="./assets/icons/facebook.svg"
-                      alt="Facebook"
-                      width="18"
-                      height="18"
-                    />
+              <div
+                class="nav flex-row align-items-stretch gap-2"
+                style="list-style: none; padding-left: 0; margin-bottom: 0"
+              >
+                <div>
+                  <a
+                    href="https://www.udemy.com/user/sergio-filipe-da-cunha-oliveira/"
+                    class="p-0"
+                    style="display: inline-block; width: 18px; height: 18px"
+                  >
+                    <span
+                      aria-hidden="true"
+                      style="
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        background-color: rgb(149, 124, 98);
+                        -webkit-mask: url('./assets/icons/udemy.svg') no-repeat
+                          center / contain;
+                        mask: url('./assets/icons/udemy.svg') no-repeat center /
+                          contain;
+                      "
+                    ></span>
+                    <span class="visually-hidden">Udemy</span>
                   </a>
-                </li>
-                <li class="nav-item mx-1">
-                  <a href="#" class="nav-link p-0">
-                    <img
-                      src="./assets/icons/cloud.svg"
-                      alt="Cloud"
-                      width="18"
-                      height="18"
-                    />
+                </div>
+                <div>
+                  <a
+                    href="https://drive.google.com/drive/folders/1-SS5XW_qQgPNBl8mXvhhONFKOceneOjF"
+                    class="p-0"
+                    style="display: inline-block; width: 18px; height: 18px"
+                  >
+                    <span
+                      aria-hidden="true"
+                      style="
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        background-color: rgb(149, 124, 98);
+                        -webkit-mask: url('./assets/icons/cloud.svg') no-repeat
+                          center / contain;
+                        mask: url('./assets/icons/cloud.svg') no-repeat center /
+                          contain;
+                      "
+                    ></span>
+                    <span class="visually-hidden">Cloud</span>
                   </a>
-                </li>
-                <li class="nav-item mx-1">
-                  <a href="#" class="nav-link p-0">
-                    <img
-                      src="./assets/icons/linkedin.svg"
-                      alt="LinkedIn"
-                      width="18"
-                      height="18"
-                    />
+                </div>
+                <div>
+                  <a
+                    href="https://www.linkedin.com/in/sergio-dev-android-junior/"
+                    class="p-0"
+                    style="display: inline-block; width: 18px; height: 18px"
+                  >
+                    <span
+                      aria-hidden="true"
+                      style="
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        background-color: rgb(149, 124, 98);
+                        -webkit-mask: url('./assets/icons/linkedin.svg')
+                          no-repeat center / contain;
+                        mask: url('./assets/icons/linkedin.svg') no-repeat
+                          center / contain;
+                      "
+                    ></span>
+                    <span class="visually-hidden">LinkedIn</span>
                   </a>
-                </li>
-                <li class="nav-item mx-1">
-                  <a href="#" class="nav-link p-0">
-                    <img
-                      src="./assets/icons/github.svg"
-                      alt="GitHub"
-                      width="18"
-                      height="18"
-                    />
+                </div>
+                <div>
+                  <a
+                    href="https://github.com/OL-sergio"
+                    class="p-0"
+                    style="display: inline-block; width: 18px; height: 18px"
+                  >
+                    <span
+                      aria-hidden="true"
+                      style="
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        background-color: rgb(149, 124, 98);
+                        -webkit-mask: url('./assets/icons/github.svg') no-repeat
+                          center / contain;
+                        mask: url('./assets/icons/github.svg') no-repeat center /
+                          contain;
+                      "
+                    ></span>
+                    <span class="visually-hidden">GitHub</span>
                   </a>
-                </li>
-              </ul>
+                  <a
+                    href="https://developers.google.com/profile/u/Ol-sergio?hl=pt-br"
+                    class="p-0"
+                    style="display: inline-block; width: 18px; height: 18px"
+                  >
+                    <span
+                      aria-hidden="true"
+                      style="
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        background-color: rgb(149, 124, 98);
+                        -webkit-mask: url('./assets/icons/android2.svg')
+                          no-repeat center / contain;
+                        mask: url('./assets/icons/android2.svg') no-repeat
+                          center / contain;
+                      "
+                    ></span>
+                    <span class="visually-hidden">Android</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </footer>

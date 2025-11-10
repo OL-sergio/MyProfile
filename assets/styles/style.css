@@ -4,15 +4,24 @@ body {
 }
 
 .gradient {
-  width: 100vw;
-  height: 65vh;
-  color: rgb(243, 226, 197);
-  background: rgb(244, 235, 221);
+  color: rgb(149, 124, 98);
+
   background: linear-gradient(
     90deg,
-    rgb(241, 216, 174) 40%,
-    rgb(133, 123, 111) 40%
+    rgba(241, 216, 174) 34.2%,
+    rgba(255, 255, 255) 34.2%
   );
+}
+
+@media screen and (max-width: 840px) {
+  .gradient {
+    background: rgb(244, 235, 221);
+    background: linear-gradient(
+      180deg,
+      rgba(241, 216, 174) 40%,
+      rgba(255, 255, 255) 40%
+    );
+  }
 }
 
 .color-profile {
@@ -20,5 +29,5 @@ body {
   color: rgb(149, 124, 98);
 }
 .color-details {
-  background-color: rgb(133, 123, 111);
+  background-color: rgb(255, 255, 255);
 }
