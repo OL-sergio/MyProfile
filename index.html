@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>MyProfile</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -10,7 +13,10 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/styles/style.index.css"
+    />
   </head>
   <body>
     <!-- header -->
@@ -40,14 +46,16 @@
               "
             ></span>
 
-            <span class="fs-3" style="color: rgb(149, 124, 98)"
+            <span
+              class="fs-3"
+              style="color: rgb(149, 124, 98)"
               >Sérgio Oliveira <span class="fs-6"> / Programador </span></span
             >
           </a>
           <div class="nav nav-pills fs-6 gap-3">
             <div class="nav-item">
               <a
-                href="#about"
+                href="./src/about.html"
                 class="nav-link text-uppercase"
                 style="color: rgb(149, 124, 98)"
                 >Sobre mim</a
@@ -55,7 +63,7 @@
             </div>
             <div class="nav-item">
               <a
-                href="#resume"
+                href="./src/curriculum.html"
                 class="nav-link text-uppercase"
                 style="color: rgb(149, 124, 98)"
                 >Currículo</a
@@ -63,7 +71,7 @@
             </div>
             <div class="nav-item">
               <a
-                href="#projects"
+                href="./src/projects.html"
                 class="nav-link text-uppercase"
                 style="color: rgb(149, 124, 98)"
                 >Projetos</a
@@ -71,10 +79,10 @@
             </div>
             <div class="nav-item">
               <a
-                href="#contact"
+                href="./src/contact.html"
                 class="nav-link text-uppercase"
                 style="color: rgb(149, 124, 98)"
-                >Contato</a
+                >Contacto</a
               >
             </div>
           </div>
@@ -83,9 +91,20 @@
     </section>
     <!-- hero -->
     <section id="hero">
-      <div class="gradient">
-        <div class="container flex px-5 py-5" style="align-self: center">
-          <div class="row m-1 p-1" style="align-self: center">
+      <div
+        class="gradient"
+        style="
+          padding-bottom: 100px;
+          padding-top: 100px;
+          padding-left: 15px;
+          margin: 0px;
+        "
+      >
+        <div
+          class="container flex-column align-items-center px-5 py-5"
+          style="align-self: center"
+        >
+          <div class="row m-1 p-1">
             <div
               class="col-12 col-sm-5 col-xxl-2 col-dm-3 col-sm-5 d-flex flex-column align-items-center m-0 p-0 color-profile"
               style="width: 400px; height: 600px"
@@ -239,11 +258,18 @@
               </div>
             </div>
             <div
-              class="col-lg-8 color-details"
-              style="align-self: center; width: 625px; height: 600px"
+              class="col-lg-8 color-details mx-4"
+              style="
+                align-self: center;
+                width: 625px;
+                height: 600px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin: 0px;
+              "
             >
               <p
-                class="fw-bold m-0 ms-0 d-flex justify-content-md-start align-items-center"
+                class="fw-bold m-0 ms-0 d-flex align-items-center"
                 style="
                   width: 200px;
                   height: 200px;
@@ -260,6 +286,7 @@
                 <button
                   data-bs-toggle="button"
                   onkeydown="return true;"
+                  onclick="location.href='./src/curriculum.html';"
                   class="btn fs-6 btn-primary btn-lg-23 mb-4 px-4 me-md-2 d-flex align-items-center justify-content-center"
                   style="
                     border-radius: 4rem;
@@ -277,6 +304,7 @@
                 <button
                   data-bs-toggle="button"
                   onkeydown="return true;"
+                  onclick="location.href='./src/projects.html';"
                   class="btn fs-6 btn-outline btn-lg mb-4 px-4 me-md-2 d-flex align-items-center justify-content-center"
                   style="
                     border-radius: 4rem;
@@ -316,8 +344,11 @@
 
     <!-- footer -->
     <section id="footer">
-      <div class="container py-4 my-4">
-        <footer class="row row-col-lg-1 row-col-sm-1 row-cols-xxl-5 my-5 mx-5">
+      <div
+        class="container py-0 my-5"
+        style="margin-top: 100px"
+      >
+        <footer class="row row-col-lg-1 row-col-sm-1 row-cols-xxl-5 my-1 mx-5">
           <div class="col mb-1 my-1 mx-0">
             <h6>
               <svg
@@ -338,29 +369,38 @@
 
               2025 por Sérgio Oliveira.
             </h6>
+            <!-- Use a free template from Wix -->
+            <div class="row row-col-lg-1">
+              <h6>
+                Todos os direitos reservados. Template grátis de
+                <a
+                  href="https://pt.wix.com/website-template/view/html/2622?originUrl=https%3A%2F%2Fpt.wix.com%2Fwebsite%2Ftemplates%3Fcriteria%3DCurr%25C3%25ADculo&tpClick=view_button&esi=dc0d9768-9152-4363-ae23-d8f1cbac08a0"
+                  >Wix.com</a
+                >
+              </h6>
+            </div>
           </div>
           <div class="row d-flex flex-grow-1 mb-3"></div>
-          <div class="row mb-1 my-1">
+          <div class="row mb-4 my-1">
             <h6>Telefone</h6>
             <div class="nav">
-              <div class="nav-item mx-2">
+              <div class="nav-item">
                 <a
                   href="#"
-                  class="nav-link p-0"
+                  class="nav-link p-0 mx-3"
                   style="color: rgb(149, 124, 98)"
                   ><h6>+351 939416328</h6></a
                 >
               </div>
             </div>
           </div>
-          <div class="col mb-3 my-1">
+          <div class="col mb-4 my-1 mx-1">
             <h6>Email</h6>
-
             <div class="nav">
               <div class="nav-item">
                 <a
                   href="#"
-                  class="nav-link p-0"
+                  class="nav-link p-0 mx-0"
                   style="color: rgb(149, 124, 98)"
                   ><h6>a18074@alunos.ipca.pt</h6></a
                 >
