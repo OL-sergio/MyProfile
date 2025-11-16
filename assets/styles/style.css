@@ -1,9 +1,7 @@
 body {
   background-color: rgb(255, 255, 255);
   color: rgb(149, 124, 98);
-  
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;  
-  
+  font-family: 'Open Sans', sans-serif, Geneva, Verdana, sans-serif;
 }
 
 .gradient {
@@ -26,10 +24,171 @@ body {
   }
 }
 
-.color-profile {
+.color_profile {
   background-color: rgb(243, 226, 197);
   color: rgb(149, 124, 98);
 }
-.color-details {
+.color_details {
   background-color: rgb(255, 255, 255);
+}
+
+.header_title_section {
+  display: inline-block;
+  width: 34px;
+  height: 50px;
+  margin-right: 10px;
+  background-color: rgb(3, 24, 250);
+  -webkit-mask: url('../icons/braces.svg') no-repeat center / contain;
+  mask: url('../icons/braces.svg') no-repeat center / contain;
+}
+
+.header_title_color {
+  color: rgb(149, 124, 98);
+}
+
+.header_select_link {
+  color: rgb(3, 24, 250);
+}
+.header_no_select_link {
+  color: rgb(149, 124, 98);
+}
+
+.hero_padding {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-left: 15px;
+  margin: 0px;
+}
+
+.hero_align_items {
+  align-items: center;
+}
+
+.hero_img_config {
+  width: 250px;
+  height: 300px;
+  border-radius: 100%;
+}
+.hero_presentation_size_left {
+  width: 400px;
+  height: 600px;
+}
+
+.hero_divider {
+  border-top: 5px solid rgb(3, 24, 250);
+  width: 70px;
+  height: 1rem;
+}
+
+.hero_text_costume {
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
+
+.hero_icons_sizing {
+  width: 0px;
+  height: 70px;
+}
+
+.hero_icons_sizing_flex {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 150px;
+}
+
+.icons_config {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: rgb(149, 124, 98);
+}
+
+.icons_config_credits {
+  display: inline-block;
+  margin-bottom: 4px;
+  margin-right: 3px;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(149, 124, 98);
+}
+
+.svg_udemy {
+  -webkit-mask: url('../icons/udemy.svg') no-repeat center / contain;
+  mask: url('../icons/udemy.svg') no-repeat center / contain;
+}
+.svg_github {
+  -webkit-mask: url('../icons/github.svg') no-repeat center / contain;
+  mask: url('../icons/github.svg') no-repeat center / contain;
+}
+.svg_linkedin {
+  -webkit-mask: url('../icons/linkedin.svg') no-repeat center / contain;
+  mask: url('../icons/linkedin.svg') no-repeat center / contain;
+}
+
+.svg_android2 {
+  -webkit-mask: url('../icons/android2.svg') no-repeat center / contain;
+  mask: url('../icons/android2.svg') no-repeat center / contain;
+}
+
+.svg_cloud {
+  -webkit-mask: url('../icons/cloud.svg') no-repeat center / contain;
+  mask: url('../icons/cloud.svg') no-repeat center / contain;
+}
+
+.svg_c_circle {
+  -webkit-mask: url('../icons/c-circle.svg') no-repeat center / contain;
+  mask: url('../icons/c-circle.svg') no-repeat center / contain;
+}
+
+.hero_sizing_presentation_right {
+  align-self: center;
+  width: 600px;
+  height: 628px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px;
+}
+
+.hero_presentation_title {
+  width: 180px;
+  height: 160px;
+  font-size: 90px;
+  text-align: center;
+  overflow: hidden;
+  color: rgb(149, 124, 98);
+}
+
+.hero_button_left {
+  border-radius: 4rem;
+  width: 155px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgb(13, 24, 250);
+  outline: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+.hero_button_right {
+  border-radius: 4rem;
+  width: 155px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 1px solid rgb(149, 124, 98);
+  color: rgb(149, 124, 98);
+}
+
+.footer_text_color {
+  color: rgb(149, 124, 98);
+}
+
+.footer_margin_top {
+  margin-top: 100px;
+}
+
+.footer_icons_config {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
 }
