@@ -1,0 +1,7 @@
+.vscode
+.vscode/settings.json
+.github
+.github/instructions/sonarqube_mcp.instructions.md
+cspell.json
+
+.gitignore
