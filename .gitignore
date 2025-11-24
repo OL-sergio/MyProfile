@@ -3,5 +3,5 @@
 .github
 .github/instructions/sonarqube_mcp.instructions.md
 cspell.json
-
+instructions
 .gitignore

@@ -1,35 +1,43 @@
+:root {
+  --color-accent: rgb(3, 24, 250);
+  --color-text: rgb(149, 124, 98);
+  --color-card: rgb(243, 226, 197);
+  --color-gradient-start: rgb(241, 216, 174);
+  --color-background: rgb(250, 250, 250);
+}
+
 body {
-  background-color: rgb(255, 255, 255);
-  color: rgb(149, 124, 98);
+  background-color: var(--color-background);
+  color: var(--color-text);
   font-family: 'Open Sans', sans-serif, Geneva, Verdana, sans-serif;
 }
 
 .gradient {
-  color: rgb(149, 124, 98);
+  color: var(--color-text);
   background: linear-gradient(
     90deg,
-    rgba(241, 216, 174) 34.2%,
-    rgba(255, 255, 255) 34.2%
+    var(--color-gradient-start) 34.2%,
+    var(--color-background) 34.2%
   );
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 640px) {
   .gradient {
-    background: rgb(244, 235, 221);
+    background: var(--color-background);
     background: linear-gradient(
       180deg,
-      rgba(241, 216, 174) 40%,
-      rgba(255, 255, 255) 40%
+      var(--color-gradient-start) 40%,
+      var(--color-background) 40%
     );
   }
 }
 
 .color_profile {
-  background-color: rgb(243, 226, 197);
-  color: rgb(149, 124, 98);
+  background-color: var(--color-card);
+  color: var(--color-text);
 }
 .color_details {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-background);
 }
 
 .header_title_section {
@@ -37,20 +45,28 @@ body {
   width: 34px;
   height: 50px;
   margin-right: 10px;
-  background-color: rgb(3, 24, 250);
+  background-color: var(--color-accent);
   -webkit-mask: url('../icons/braces.svg') no-repeat center / contain;
   mask: url('../icons/braces.svg') no-repeat center / contain;
 }
 
 .header_title_color {
-  color: rgb(149, 124, 98);
+  color: var(--color-text);
+}
+
+.header_subtitle_color {
+  margin-top: 10px;
+  margin-left: 6px;
+  text-transform: uppercase;
+  color: var(--color-text);
+  text-decoration: none;
 }
 
 .header_select_link {
-  color: rgb(3, 24, 250);
+  color: var(--color-accent);
 }
 .header_no_select_link {
-  color: rgb(149, 124, 98);
+  color: var(--color-text);
 }
 
 .hero_padding {
@@ -71,11 +87,11 @@ body {
 }
 .hero_presentation_size_left {
   width: 400px;
-  height: 600px;
+  height: 570px;
 }
 
 .hero_divider {
-  border-top: 5px solid rgb(3, 24, 250);
+  border-top: 5px solid var(--color-accent);
   width: 70px;
   height: 1rem;
 }
@@ -91,7 +107,7 @@ body {
 }
 
 .hero_icons_sizing_flex {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-background);
   width: 100%;
   height: 150px;
 }
@@ -100,7 +116,7 @@ body {
   display: inline-block;
   width: 18px;
   height: 18px;
-  background-color: rgb(149, 124, 98);
+  background-color: var(--color-text);
 }
 
 .icons_config_credits {
@@ -110,7 +126,12 @@ body {
   vertical-align: middle;
   width: 20px;
   height: 20px;
-  background-color: rgb(149, 124, 98);
+  background-color: var(--color-text);
+}
+
+.svg_braces {
+  -webkit-mask: url('../icons/braces.svg') no-repeat center / contain;
+  mask: url('../icons/braces.svg') no-repeat center / contain;
 }
 
 .svg_udemy {
@@ -144,19 +165,20 @@ body {
 .hero_sizing_presentation_right {
   align-self: center;
   width: 600px;
-  height: 628px;
+  height: 579px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0px;
 }
 
 .hero_presentation_title {
-  width: 180px;
-  height: 160px;
-  font-size: 90px;
+  width: 260px;
+  height: 150px;
+  font-size: 110px;
+  font-weight: bold;
   text-align: center;
   overflow: hidden;
-  color: rgb(149, 124, 98);
+  color: var(--color-text);
 }
 
 .hero_button_left {
@@ -165,9 +187,9 @@ body {
   height: 40px;
   text-align: center;
   text-transform: uppercase;
-  background-color: rgb(13, 24, 250);
-  outline: 2px solid rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
+  background-color: var(--color-accent);
+  outline: 2px solid var(--color-accent);
+  color: var(--color-background);
 }
 .hero_button_right {
   border-radius: 4rem;
@@ -175,12 +197,12 @@ body {
   height: 40px;
   text-align: center;
   text-transform: uppercase;
-  outline: 1px solid rgb(149, 124, 98);
-  color: rgb(149, 124, 98);
+  outline: 1px solid var(--color-text);
+  color: var(--color-text);
 }
 
 .footer_text_color {
-  color: rgb(149, 124, 98);
+  color: var(--color-text);
 }
 
 .footer_margin_top {
@@ -191,4 +213,28 @@ body {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
+}
+
+.pages_background {
+  background: var(--color-gradient-start);
+}
+
+.card_background {
+  background: var(--color-background);
+}
+
+.curriculum_section_title {
+  display: inline-block;
+  width: 40px;
+  height: 50px;
+  margin-right: 12px;
+  margin-bottom: 5px;
+  background-color: var(--color-accent);
+}
+
+.curriculum_square_divider {
+  border-top: 14px solid var(--color-accent);
+  width: 14px;
+  height: 1rem;
+  margin-top: 8px;
 }

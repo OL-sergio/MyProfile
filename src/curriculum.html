@@ -15,7 +15,7 @@
 
     <link
       rel="stylesheet"
-      href="./assets/styles/style.css"
+      href="../assets/css/styles.css"
     />
     <title>My Curriculum</title>
   </head>
@@ -28,59 +28,45 @@
         >
           <a
             href="/index.html"
-            class="d-flex align-items-center mb-1 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
             aria-label="Home"
           >
             <span
               aria-hidden="true"
-              style="
-                display: inline-block;
-                width: 34px;
-                height: 50px;
-                margin-right: 10px;
-                background-color: rgb(3, 24, 250);
-                -webkit-mask: url('/assets/icons/braces.svg') no-repeat center /
-                  contain;
-                mask: url('/assets/icons/braces.svg') no-repeat center / contain;
-              "
+              class="header_title_section"
             ></span>
-
             <span
-              class="fs-3"
-              style="color: rgb(149, 124, 98)"
-              >Sérgio Oliveira <span class="fs-6"> / Programador </span></span
-            >
+              class="fs-3 header_title_color fw-bold"
+              href="/index.html"
+              >Sérgio Oliveira </span
+            ><span class="fs-6 header_subtitle_color">/ Programador </span>
           </a>
-          <div class="nav nav-pills fs-6 gap-3 mt-2 p-0">
+          <div class="nav nav-pills fs-6 mt-2 p-0 gap-3">
             <div class="nav-item">
               <a
                 href="/index.html"
-                class="nav-link text-uppercase"
-                style="color: rgb(149, 124, 98)"
+                class="nav-link text-uppercase header_no_select_link"
                 >Sobre mim</a
               >
             </div>
             <div class="nav-item">
               <a
-                href="./curriculum.html"
+                href="./curriculum.html "
                 class="nav-link text-uppercase"
-                style="color: rgb(3, 24, 250)"
                 >Currículo</a
               >
             </div>
             <div class="nav-item">
               <a
                 href="./projects.html"
-                class="nav-link text-uppercase"
-                style="color: rgb(149, 124, 98)"
+                class="nav-link text-uppercase header_no_select_link"
                 >Projetos</a
               >
             </div>
             <div class="nav-item">
               <a
                 href="./contact.html"
-                class="nav-link text-uppercase"
-                style="color: rgb(149, 124, 98)"
+                class="nav-link text-uppercase header_no_select_link"
                 >Contacto</a
               >
             </div>
@@ -89,38 +75,372 @@
       </div>
     </section>
 
-    <section>
-      <h1>My Curriculum</h1>
+    <section id="curriculum_hero">
+      <div class="pages_background mt-5 pt-4">
+        <div class="px-5 pt-4 mt-5 text-center">
+          <div class="d-flex align-items-center justify-content-center">
+            <span class="align-self-center curriculum_section_title svg_braces">
+            </span>
+            <h6 class="display-6 fw-bold text-body-emphasis">Currículo</h6>
+          </div>
+          <div class="col-lg-6 mx-auto mb-4 px-4 p-0">
+            <div
+              class="d-flex justify-content-around gap-2 d-sm-flex"
+              style="padding-top: 100px"
+            >
+              <div>
+                <h3
+                  class="fw-bold"
+                  style="color: rgb(2, 2, 2)"
+                >
+                  Experiência
+                </h3>
+              </div>
+              <div>
+                <button
+                  data-bs-toggle="button"
+                  onkeydown="return true;"
+                  onclick="window.location.href='https://drive.google.com/file/d/19Q5PKIAmmhQGuCihTumVH2qrc5XRD3J2/view?usp=drive_link';"
+                  class="btn fs-6 btn-outline btn-lg mb-4 px-4 me-md-2 d-flex align-items-center justify-content-center hero_button_left"
+                >
+                  Baixar CV
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container col-xxl-8 align-items-center px-4 pb-5 pt-1 mb-5"
+          style="width: 800px"
+        >
+          <div class="container card_background mb-4 mt-2 p-4 shadow">
+            <div class="row flex-lg-row-reverse g-5 py-0 my-0 mx-0 px-0">
+              <div>
+                <h3
+                  class="fw-bold p-0 m-0"
+                  style="color: blue"
+                >
+                  2023-2024
+                </h3>
+              </div>
+              <div class="col">
+                <p class="lead">
+                  Quickly design and customize responsive mobile-first sites
+                  with Bootstrap, the world’s most popular front-end open source
+                  toolkit
+                </p>
+                <p class="lead">
+                  Quickly design and customize responsive mobile-first sites
+                  with Bootstrap, the world’s most popular front-end open source
+                  toolkit
+                </p>
+              </div>
+              <div class="col-lg-6 align-self-top">
+                <p class="lead">
+                  Quickly design and customize responsive mobile-first sites
+                  with Bootstrap.
+                </p>
+                <div class="lead">
+                  <p>Primary</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container card_background mb-4 mt-2 p-4 shadow">
+            <div class="row flex-lg-row-reverse g-5 py-0 my-0 mx-0 px-0">
+              <div>
+                <h3
+                  class="fw-bold p-0 m-0"
+                  style="color: blue"
+                >
+                  2023-2024
+                </h3>
+              </div>
+              <div class="col">
+                <p class="lead">
+                  Quickly design and customize responsive mobile-first sites
+                  with Bootstrap, the world’s most popular front-end open source
+                  toolkit
+                </p>
+                <p class="lead">
+                  Quickly design and customize responsive mobile-first sites
+                  with Bootstrap, the world’s most popular front-end open source
+                  toolkit
+                </p>
+              </div>
+              <div class="col-lg-6 align-self-top">
+                <p class="lead">
+                  Quickly design and customize responsive mobile-first sites
+                  with Bootstrap.
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <p>Primary</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container m-0 p-0">
+            <div class="mb-5 mt-5 pt-5">
+              <h3 style="color: rgb(2, 2, 2); font-weight: bolder">Formação</h3>
+            </div>
+          </div>
+
+          <div class="container card_background mb-4 mt-2 p-4 shadow">
+            <div class="row flex-lg-row-reverse g-5 py-0 my-0 mx-0 px-0">
+              <div>
+                <h3
+                  class="fw-bold p-0 m-0"
+                  style="color: blue"
+                >
+                  2023-2024
+                </h3>
+              </div>
+              <div class="col">
+                <p class="lead">
+                  Quickly design and customize responsive mobile-first sites
+                  with Bootstrap, the world’s most popular front-end open source
+                  toolkit
+                </p>
+                <p class="lead">
+                  Quickly design and customize responsive mobile-first sites
+                  with Bootstrap, the world’s most popular front-end open source
+                  toolkit
+                </p>
+              </div>
+              <div class="col-lg-6 align-self-top">
+                <p class="lead">
+                  Quickly design and customize responsive mobile-first sites
+                  with Bootstrap.
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <p>Primary</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container card_background mb-4 mt-2 p-4 shadow">
+            <div class="row flex-lg-row-reverse g-5 py-0 my-0 mx-0 px-0">
+              <div>
+                <h3
+                  class="fw-bold p-0 m-0"
+                  style="color: blue"
+                >
+                  2023-2024
+                </h3>
+              </div>
+              <div class="col">
+                <p class="lead">
+                  Quickly design and customize responsive mobile-first sites
+                  with Bootstrap, the world’s most popular front-end open source
+                  toolkit
+                </p>
+                <p class="lead">
+                  Quickly design and customize responsive mobile-first sites
+                  with Bootstrap, the world’s most popular front-end open source
+                  toolkit
+                </p>
+              </div>
+              <div class="col-lg-6 align-self-top">
+                <p class="lead">
+                  Quickly design and customize responsive mobile-first sites
+                  with Bootstrap.
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <p>Primary</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container card_background mb-5 mt-5 p-4 shadow">
+            <div
+              class="container px-4 pt-5"
+              id="icon-grid"
+            >
+              <h2 class="pb-2 ps-5">Habilidades profissionais</h2>
+              <div
+                class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mb-4 py-4"
+              >
+                <div class="col d-flex align-items-start">
+                  <svg
+                    class="bi text-body-secondary flex-shrink-0 me-3 curriculum_square_divider"
+                    width="1.75em"
+                    height="1.75em"
+                    aria-hidden="true"
+                  >
+                    <use xlink:href="#bootstrap"></use>
+                  </svg>
+                  <div>
+                    <h3 class="mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <svg
+                    class="bi text-body-secondary flex-shrink-0 me-3 curriculum_square_divider"
+                    width="1.75em"
+                    height="1.75em"
+                    aria-hidden="true"
+                  >
+                    <use xlink:href="#cpu-fill"></use>
+                  </svg>
+                  <div>
+                    <h3 class="mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <svg
+                    class="bi text-body-secondary flex-shrink-0 me-3 curriculum_square_divider"
+                    width="1.75em"
+                    height="1.75em"
+                    aria-hidden="true"
+                  >
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <div>
+                    <h3 class="mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <svg
+                    class="bi text-body-secondary flex-shrink-0 me-3 curriculum_square_divider"
+                    width="1.75em"
+                    height="1.75em"
+                    aria-hidden="true"
+                  >
+                    <use xlink:href="#home"></use>
+                  </svg>
+                  <div>
+                    <h3 class="mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <svg
+                    class="bi text-body-secondary flex-shrink-0 me-3 curriculum_square_divider"
+                    width="20px"
+                    height="20px"
+                    aria-hidden="false"
+                    color="lightblue"
+                  >
+                    <use xlink:href="#speedometer2"></use>
+                  </svg>
+                  <div>
+                    <h3 class="mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <svg
+                    class="bi text-body-secondary flex-shrink-0 me-3 curriculum_square_divider"
+                    width="1.75em"
+                    height="1.75em"
+                    aria-hidden="true"
+                  >
+                    <use xlink:href="#toggles2"></use>
+                  </svg>
+                  <div>
+                    <h3 class="mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <svg
+                    class="bi text-body-secondary flex-shrink-0 me-3 curriculum_square_divider"
+                    width="1.75em"
+                    height="1.75em"
+                    aria-hidden="true"
+                  >
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <div>
+                    <h3 class="mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <svg
+                    class="bi text-body-secondary flex-shrink-0 me-3 curriculum_square_divider"
+                    width="1.75em"
+                    height="1.75em"
+                    aria-hidden="true"
+                  >
+                    <use xlink:href="#tools"></use>
+                  </svg>
+                  <div>
+                    <h3 class="mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="container px-4 py-0"
+              id="icon-grid"
+            >
+              <h2 class="pb-2 ps-5">Idiomas</h2>
+              <div
+                class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-4"
+              >
+                <div class="col d-flex align-items-start">
+                  <svg
+                    class="bi text-body-secondary flex-shrink-0 me-3 curriculum_square_divider"
+                    width="1.75em"
+                    height="1.75em"
+                    aria-hidden="true"
+                  >
+                    <use xlink:href="#bootstrap"></use>
+                  </svg>
+                  <div>
+                    <h3 class="mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <svg
+                    class="bi text-body-secondary flex-shrink-0 me-3 curriculum_square_divider"
+                    width="1.75em"
+                    height="1.75em"
+                    aria-hidden="true"
+                  >
+                    <use xlink:href="#cpu-fill"></use>
+                  </svg>
+                  <div>
+                    <h3 class="mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <svg
+                    class="bi text-body-secondary flex-shrink-0 me-3 curriculum_square_divider"
+                    width="1.75em"
+                    height="1.75em"
+                    aria-hidden="true"
+                  >
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <div>
+                    <h3 class="mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="footer">
-      <div
-        class="container py-0 my-5"
-        style="margin-top: 100px"
-      >
-        <footer class="row row-col-lg-1 row-col-sm-1 row-cols-xxl-5 my-1 mx-5">
-          <div class="col mb-1 my-1 mx-0">
+      <div class="container py-0 my-5 footer_margin_top">
+        <footer
+          class="row row-cols-1 row-cols-sm-1 row-cols-md-5 mx-0 py-0 my-0"
+        >
+          <div class="col my-0 mx-0">
             <h6>
               <svg
                 aria-hidden="true"
-                style="
-                  display: inline-block;
-                  width: 18px;
-                  height: 18px;
-                  margin-right: 3px;
-                  margin-bottom: 4px;
-                  background-color: rgb(149, 124, 98);
-                  -webkit-mask: url('/assets/icons/c-circle.svg') no-repeat
-                    center / contain;
-                  mask: url('/assets/icons/c-circle.svg') no-repeat center /
-                    contain;
-                "
+                class="icons_config_credits svg_c_circle"
               ></svg>
 
               2025 por Sérgio Oliveira.
             </h6>
             <!-- Use a free template from Wix -->
-            <div class="row row-col-lg-1">
+            <div class="row mt-1">
               <h6>
                 Todos os direitos reservados. Template grátis de
                 <a
@@ -130,58 +450,45 @@
               </h6>
             </div>
           </div>
-          <div class="row d-flex flex-grow-1 mb-3"></div>
-          <div class="row mb-4 my-1">
+          <div class="row d-flex flex-grow-5"></div>
+          <div class="col mb-3">
             <h6>Telefone</h6>
             <div class="nav">
               <div class="nav-item">
                 <a
                   href="#"
-                  class="nav-link p-0 mx-3"
-                  style="color: rgb(149, 124, 98)"
+                  class="nav-link p-0 mx-0 footer_text_color"
                   ><h6>+351 939416328</h6></a
                 >
               </div>
             </div>
           </div>
-          <div class="col mb-4 my-1 mx-1">
+          <div class="col mb-3">
             <h6>Email</h6>
-            <div class="nav">
+            <div>
               <div class="nav-item">
                 <a
                   href="#"
-                  class="nav-link p-0 mx-0"
-                  style="color: rgb(149, 124, 98)"
+                  class="nav-link p-0 mx-0 footer_text_color"
                   ><h6>a18074@alunos.ipca.pt</h6></a
                 >
               </div>
             </div>
           </div>
-          <div class="row my-1">
+          <div class="row mb-3">
             <div>
               <h6>Redes Sociais</h6>
               <div
-                class="nav flex-row align-items-stretch gap-2"
-                style="list-style: none; padding-left: 0; margin-bottom: 0"
+                class="nav flex-row align-items-stretch gap-2 footer_icons_config"
               >
                 <div>
                   <a
                     href="https://www.udemy.com/user/sergio-filipe-da-cunha-oliveira/"
                     class="p-0"
-                    style="display: inline-block; width: 18px; height: 18px"
                   >
                     <span
                       aria-hidden="true"
-                      style="
-                        display: inline-block;
-                        width: 18px;
-                        height: 18px;
-                        background-color: rgb(149, 124, 98);
-                        -webkit-mask: url('/assets/icons/udemy.svg') no-repeat
-                          center / contain;
-                        mask: url('/assets/icons/udemy.svg') no-repeat center /
-                          contain;
-                      "
+                      class="icons_config svg_udemy"
                     ></span>
                     <span class="visually-hidden">Udemy</span>
                   </a>
@@ -190,21 +497,12 @@
                   <a
                     href="https://drive.google.com/drive/folders/1-SS5XW_qQgPNBl8mXvhhONFKOceneOjF"
                     class="p-0"
-                    style="display: inline-block; width: 18px; height: 18px"
                   >
                     <span
                       aria-hidden="true"
-                      style="
-                        display: inline-block;
-                        width: 18px;
-                        height: 18px;
-                        background-color: rgb(149, 124, 98);
-                        -webkit-mask: url('/assets/icons/cloud.svg') no-repeat
-                          center / contain;
-                        mask: url('/assets/icons/cloud.svg') no-repeat center /
-                          contain;
-                      "
+                      class="icons_config svg_cloud"
                     ></span>
+
                     <span class="visually-hidden">Cloud</span>
                   </a>
                 </div>
@@ -212,20 +510,10 @@
                   <a
                     href="https://www.linkedin.com/in/sergio-dev-android-junior/"
                     class="p-0"
-                    style="display: inline-block; width: 18px; height: 18px"
                   >
                     <span
                       aria-hidden="true"
-                      style="
-                        display: inline-block;
-                        width: 18px;
-                        height: 18px;
-                        background-color: rgb(149, 124, 98);
-                        -webkit-mask: url('/assets/icons/linkedin.svg')
-                          no-repeat center / contain;
-                        mask: url('/assets/icons/linkedin.svg') no-repeat center /
-                          contain;
-                      "
+                      class="icons_config svg_linkedin"
                     ></span>
                     <span class="visually-hidden">LinkedIn</span>
                   </a>
@@ -234,40 +522,22 @@
                   <a
                     href="https://github.com/OL-sergio"
                     class="p-0"
-                    style="display: inline-block; width: 18px; height: 18px"
                   >
                     <span
                       aria-hidden="true"
-                      style="
-                        display: inline-block;
-                        width: 18px;
-                        height: 18px;
-                        background-color: rgb(149, 124, 98);
-                        -webkit-mask: url('/assets/icons/github.svg') no-repeat
-                          center / contain;
-                        mask: url('/assets/icons/github.svg') no-repeat center /
-                          contain;
-                      "
+                      class="icons_config svg_github"
                     ></span>
                     <span class="visually-hidden">GitHub</span>
                   </a>
+                </div>
+                <div>
                   <a
                     href="https://developers.google.com/profile/u/Ol-sergio?hl=pt-br"
                     class="p-0"
-                    style="display: inline-block; width: 18px; height: 18px"
                   >
                     <span
                       aria-hidden="true"
-                      style="
-                        display: inline-block;
-                        width: 18px;
-                        height: 18px;
-                        background-color: rgb(149, 124, 98);
-                        -webkit-mask: url('/assets/icons/android2.svg')
-                          no-repeat center / contain;
-                        mask: url('/assets/icons/android2.svg') no-repeat center /
-                          contain;
-                      "
+                      class="icons_config svg_android2"
                     ></span>
                     <span class="visually-hidden">Android</span>
                   </a>
