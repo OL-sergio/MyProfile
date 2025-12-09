@@ -4,6 +4,7 @@
   --color-card: rgb(243, 226, 197);
   --color-gradient-start: rgb(241, 216, 174);
   --color-background: rgb(250, 250, 250);
+  --color-accent-secondary: rgb(29, 46, 233);
 }
 
 body {
@@ -16,8 +17,8 @@ body {
   color: var(--color-text);
   background: linear-gradient(
     90deg,
-    var(--color-gradient-start) 34.2%,
-    var(--color-background) 34.2%
+    var(--color-gradient-start) 34.5%,
+    var(--color-background) 34.5%
   );
 }
 
@@ -44,7 +45,9 @@ body {
   display: inline-block;
   width: 34px;
   height: 50px;
-  margin-right: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+  margin-right: 8px;
   background-color: var(--color-accent);
   -webkit-mask: url('../icons/braces.svg') no-repeat center / contain;
   mask: url('../icons/braces.svg') no-repeat center / contain;
@@ -55,7 +58,6 @@ body {
 }
 
 .header_subtitle_color {
-  margin-top: 10px;
   margin-left: 6px;
   text-transform: uppercase;
   color: var(--color-text);
@@ -72,12 +74,7 @@ body {
 .hero_padding {
   padding-bottom: 100px;
   padding-top: 100px;
-  padding-left: 15px;
-  margin: 0px;
-}
-
-.hero_align_items {
-  align-items: center;
+  padding-left: 12px;
 }
 
 .hero_img_config {
@@ -87,29 +84,33 @@ body {
 }
 .hero_presentation_size_left {
   width: 400px;
-  height: 570px;
+  height: 100%;
+}
+.hero_sizing_presentation_right {
+  width: 600px;
 }
 
 .hero_divider {
   border-top: 5px solid var(--color-accent);
   width: 70px;
-  height: 1rem;
+  height: 100%;
 }
 
 .hero_text_costume {
-  letter-spacing: 0.4em;
+  letter-spacing: 0.6em;
   text-transform: uppercase;
 }
 
 .hero_icons_sizing {
-  width: 0px;
+  margin-top: 74px;
+  width: 100%;
   height: 70px;
 }
 
 .hero_icons_sizing_flex {
   background-color: var(--color-background);
   width: 100%;
-  height: 150px;
+  height: 70px;
 }
 
 .icons_config {
@@ -162,15 +163,6 @@ body {
   mask: url('../icons/c-circle.svg') no-repeat center / contain;
 }
 
-.hero_sizing_presentation_right {
-  align-self: center;
-  width: 600px;
-  height: 579px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0px;
-}
-
 .hero_presentation_title {
   width: 260px;
   height: 150px;
@@ -184,17 +176,17 @@ body {
 .hero_button_left {
   border-radius: 4rem;
   width: 155px;
-  height: 40px;
+  height: 45px;
   text-align: center;
   text-transform: uppercase;
   background-color: var(--color-accent);
-  outline: 2px solid var(--color-accent);
+  outline: 0px solid var(--color-accent);
   color: var(--color-background);
 }
 .hero_button_right {
   border-radius: 4rem;
   width: 155px;
-  height: 40px;
+  height: 45px;
   text-align: center;
   text-transform: uppercase;
   outline: 1px solid var(--color-text);
@@ -206,7 +198,8 @@ body {
 }
 
 .footer_margin_top {
-  margin-top: 100px;
+  margin-top: 50px;
+  
 }
 
 .footer_icons_config {
@@ -237,4 +230,8 @@ body {
   width: 14px;
   height: 1rem;
   margin-top: 8px;
+}
+
+.color_subtitle {
+  color: var(--color-accent-secondary);
 }

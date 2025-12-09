@@ -13,6 +13,26 @@
       crossorigin="anonymous"
     />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
       rel="stylesheet"
       href="../assets/css/styles.css"
     />
@@ -22,52 +42,73 @@
     <section id="header">
       <div class="container">
         <header
-          class="d-flex flex-wrap justify-content-center mx-0 py-4 my-4"
+          class="row row-cols-xxl-3 row-cols-sm-1 px-0 mx-0 mt-4 mb-3 pt-3 d-flex d-flex flex-wrap p-1"
           aria-label="Site header"
         >
-          <a
-            href="../index.html"
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-            aria-label="Home"
+          <div
+            class="d-flex flex-wrap justify-content-center mx-0 py-0 my-lg-0"
           >
-            <span
-              aria-hidden="true"
-              class="header_title_section"
-            ></span>
-            <span
-              class="fs-3 header_title_color fw-bold"
-              href="../index.html"
-              >Sérgio Oliveira </span
-            ><span class="fs-6 header_subtitle_color">/ Programador </span>
-          </a>
-          <div class="nav nav-pills fs-6 mt-2 p-0 gap-3">
-            <div class="nav-item">
+            <div class="row">
               <a
                 href="../index.html"
-                class="nav-link text-uppercase header_no_select_link"
-                >Sobre mim</a
+                class="d-flex align-items-center m-0 p-0 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+                aria-label="Home"
               >
+                <img
+                  aria-hidden="true"
+                  class="header_title_section"
+                  style="margin: 10px"
+                  alt="Logo"
+                />
+                <span
+                  class="fs-3 header_title_color fw-bold"
+                  href="../index.html"
+                  >Sérgio Oliveira </span
+                ><span
+                  class="fs-6 header_subtitle_color"
+                  style="margin-top: 6px"
+                  >/ Programador
+                </span>
+              </a>
             </div>
-            <div class="nav-item">
-              <a
-                href="./curriculum.html"
-                class="nav-link text-uppercase header_no_select_link"
-                >Currículo</a
-              >
-            </div>
-            <div class="nav-item">
-              <a
-                href="./projects.html"
-                class="nav-link text-uppercase header_no_select_link"
-                >Projetos</a
-              >
-            </div>
-            <div class="nav-item">
-              <a
-                href="./contact.html"
-                class="nav-link text-uppercase"
-                >Contacto</a
-              >
+          </div>
+
+          <div class="d-flex flex-grow-0 p-2 m-0 p-0"></div>
+
+          <div
+            class="row row-cols-5 d-flex flex-fill justify-content-evenly align-content-center align-self-center g-1 nav navbar-brand p-1 gap-1"
+          >
+            <div
+              class="d-flex flex-fill justify-content-evenly header_nav_links"
+            >
+              <div class="nav-item">
+                <a
+                  href="../index.html"
+                  class="nav-link text-uppercase"
+                  >Sobre mim</a
+                >
+              </div>
+              <div class="nav-item">
+                <a
+                  href="./curriculum.html"
+                  class="nav-link text-uppercase header_no_select_link"
+                  >Currículo</a
+                >
+              </div>
+              <div class="nav-item">
+                <a
+                  href="./projects.html"
+                  class="nav-link text-uppercase header_no_select_link"
+                  >Projetos</a
+                >
+              </div>
+              <div class="nav-item">
+                <a
+                  href="./contact.html"
+                  class="nav-link text-uppercase header_no_select_link"
+                  >Contacto</a
+                >
+              </div>
             </div>
           </div>
         </header>
@@ -89,7 +130,7 @@
               2025 por Sérgio Oliveira.
             </h6>
             <!-- Use a free template from Wix -->
-            <div class="row mt-1">
+            <div class="row mt-1 mb-3">
               <h6>
                 Todos os direitos reservados. Template grátis de
                 <a

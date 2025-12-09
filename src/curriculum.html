@@ -14,6 +14,26 @@
     />
 
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
       rel="stylesheet"
       href="../assets/css/styles.css"
     />
@@ -23,70 +43,100 @@
     <section id="header">
       <div class="container">
         <header
-          class="d-flex flex-wrap justify-content-center mx-0 py-4 my-4"
+          class="row row-cols-xxl-3 row-cols-sm-1 px-0 mx-0 mt-4 mb-3 pt-3 d-flex d-flex flex-wrap p-1"
           aria-label="Site header"
         >
-          <a
-            href="../index.html"
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-            aria-label="Home"
+          <div
+            class="d-flex flex-wrap justify-content-center mx-0 py-0 my-lg-0"
           >
-            <span
-              aria-hidden="true"
-              class="header_title_section"
-            ></span>
-            <span
-              class="fs-3 header_title_color fw-bold"
-              href="../index.html"
-              >Sérgio Oliveira </span
-            ><span class="fs-6 header_subtitle_color">/ Programador </span>
-          </a>
-          <div class="nav nav-pills fs-6 mt-2 p-0 gap-3">
-            <div class="nav-item">
+            <div class="row">
               <a
                 href="../index.html"
-                class="nav-link text-uppercase header_no_select_link"
-                >Sobre mim</a
+                class="d-flex align-items-center m-0 p-0 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+                aria-label="Home"
               >
+                <img
+                  aria-hidden="true"
+                  class="header_title_section"
+                  style="margin: 10px"
+                  alt="Logo"
+                />
+                <span
+                  class="fs-3 header_title_color fw-bold"
+                  href="../index.html"
+                  >Sérgio Oliveira </span
+                ><span
+                  class="fs-6 header_subtitle_color"
+                  style="margin-top: 6px"
+                  >/ Programador
+                </span>
+              </a>
             </div>
-            <div class="nav-item">
-              <a
-                href="./curriculum.html "
-                class="nav-link text-uppercase"
-                >Currículo</a
-              >
-            </div>
-            <div class="nav-item">
-              <a
-                href="./projects.html"
-                class="nav-link text-uppercase header_no_select_link"
-                >Projetos</a
-              >
-            </div>
-            <div class="nav-item">
-              <a
-                href="./contact.html"
-                class="nav-link text-uppercase header_no_select_link"
-                >Contacto</a
-              >
+          </div>
+
+          <div class="d-flex flex-grow-0 p-2 m-0 p-0"></div>
+
+          <div
+            class="row row-cols-5 d-flex flex-fill justify-content-evenly align-content-center align-self-center g-1 nav navbar-brand p-1 gap-1"
+          >
+            <div
+              class="d-flex flex-fill justify-content-evenly header_nav_links"
+            >
+              <div class="nav-item">
+                <a
+                  href="../index.html"
+                  class="nav-link text-uppercase"
+                  >Sobre mim</a
+                >
+              </div>
+              <div class="nav-item">
+                <a
+                  href="./curriculum.html"
+                  class="nav-link text-uppercase header_no_select_link"
+                  >Currículo</a
+                >
+              </div>
+              <div class="nav-item">
+                <a
+                  href="./projects.html"
+                  class="nav-link text-uppercase header_no_select_link"
+                  >Projetos</a
+                >
+              </div>
+              <div class="nav-item">
+                <a
+                  href="./contact.html"
+                  class="nav-link text-uppercase header_no_select_link"
+                  >Contacto</a
+                >
+              </div>
             </div>
           </div>
         </header>
       </div>
     </section>
 
-    <section id="curriculum_hero">
-      <div class="pages_background mt-5 pt-4">
-        <div class="px-5 pt-4 mt-5 text-center">
+    <section
+      id="curriculum_hero"
+      class="pages_background"
+    >
+      <div class="divider m-4 p-4"></div>
+      <div class="pages_background">
+        <div class="px-5 text-center">
           <div class="d-flex align-items-center justify-content-center">
             <span class="align-self-center curriculum_section_title svg_braces">
             </span>
             <h6 class="display-6 fw-bold text-body-emphasis">Currículo</h6>
           </div>
-          <div class="col-lg-6 mx-auto mb-4 px-4 p-0">
+
+          <div class="col-lg-6 mx-auto">
             <div
-              class="d-flex justify-content-around gap-2 d-sm-flex"
-              style="padding-top: 100px"
+              class="d-flex justify-content-around gap-5 d-sm-flex"
+              style="
+                padding-top: 100px;
+                padding-left: 70px;
+                padding-right: 70px;
+              "
             >
               <div>
                 <h3
@@ -101,7 +151,7 @@
                   data-bs-toggle="button"
                   onkeydown="return true;"
                   onclick="window.location.href='https://drive.google.com/file/d/19Q5PKIAmmhQGuCihTumVH2qrc5XRD3J2/view?usp=drive_link';"
-                  class="btn fs-6 btn-outline btn-lg mb-4 px-4 me-md-2 d-flex align-items-center justify-content-center hero_button_left"
+                  class="btn fs-6 btn-outline btn-lg px-4 me-md-2 d-flex align-items-center justify-content-center hero_button_left"
                 >
                   Baixar CV
                 </button>
@@ -109,8 +159,10 @@
             </div>
           </div>
         </div>
+
+        <div class="divider p-3 m-3"></div>
         <div
-          class="container col-xxl-8 align-items-center px-4 pb-5 pt-1 mb-5"
+          class="container col-xxl-8 align-items-center px-4 pt-1"
           style="width: 800px"
         >
           <div class="container card_background mb-4 mt-2 p-4 shadow">
@@ -136,18 +188,19 @@
                 </p>
               </div>
               <div class="col-lg-6 align-self-top">
-                <p class="lead">
-                  Quickly design and customize responsive mobile-first sites
-                  with Bootstrap.
-                </p>
+                <p class="lead">Quickly design and customize</p>
                 <div class="lead">
                   <p>Primary</p>
+                </div>
+
+                <div class="lead">
+                  <p>Secondary</p>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="container card_background mb-4 mt-2 p-4 shadow">
+          <div class="divider m-1 p-1"></div>
+          <div class="container card_background mt-2 p-4 shadow">
             <div class="row flex-lg-row-reverse g-5 py-0 my-0 mx-0 px-0">
               <div>
                 <h3
@@ -170,19 +223,21 @@
                 </p>
               </div>
               <div class="col-lg-6 align-self-top">
-                <p class="lead">
-                  Quickly design and customize responsive mobile-first sites
-                  with Bootstrap.
-                </p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <p class="lead">Quickly design and customize</p>
+                <div class="lead">
                   <p>Primary</p>
+                </div>
+
+                <div class="lead">
+                  <p>Secondary</p>
                 </div>
               </div>
             </div>
           </div>
+          <div class="divider m-1 p-1"></div>
 
-          <div class="container m-0 p-0">
-            <div class="mb-5 mt-5 pt-5">
+          <div class="container">
+            <div class="mb-5 m-0 mt-5 pt-5">
               <h3 style="color: rgb(2, 2, 2); font-weight: bolder">Formação</h3>
             </div>
           </div>
@@ -209,19 +264,20 @@
                   toolkit
                 </p>
               </div>
-              <div class="col-lg-6 align-self-top">
-                <p class="lead">
-                  Quickly design and customize responsive mobile-first sites
-                  with Bootstrap.
-                </p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+               <div class="col-lg-6 align-self-top">
+                <p class="lead">Quickly design and customize</p>
+                <div class="lead">
                   <p>Primary</p>
+                </div>
+
+                <div class="lead">
+                  <p>Secondary</p>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="container card_background mb-4 mt-2 p-4 shadow">
+          <div class="divider m-1 p-1"></div>
+          <div class="container card_background shadow">
             <div class="row flex-lg-row-reverse g-5 py-0 my-0 mx-0 px-0">
               <div>
                 <h3
@@ -244,23 +300,26 @@
                 </p>
               </div>
               <div class="col-lg-6 align-self-top">
-                <p class="lead">
-                  Quickly design and customize responsive mobile-first sites
-                  with Bootstrap.
-                </p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <p class="lead">Quickly design and customize</p>
+                <div class="lead">
                   <p>Primary</p>
+                </div>
+
+                <div class="lead">
+                  <p>Secondary</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="container card_background mb-5 mt-5 p-4 shadow">
+          <div class="divider m-4 p-4"></div>
+
+          <div class="container card_background mb-4 mt-2 p-4 shadow">
             <div
               class="container px-4 pt-5"
               id="icon-grid"
             >
-              <h2 class="pb-2 ps-5">Habilidades profissionais</h2>
+              <h2 class="pb-2 ps-2">Habilidades profissionais</h2>
               <div
                 class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mb-4 py-4"
               >
@@ -371,11 +430,8 @@
                 </div>
               </div>
             </div>
-            <div
-              class="container px-4 py-0"
-              id="icon-grid"
-            >
-              <h2 class="pb-2 ps-5">Idiomas</h2>
+            <div class="container px-4 py-4 mb-4">
+              <h2 class="pb-2 ps-2">Idiomas</h2>
               <div
                 class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-4"
               >
@@ -421,6 +477,7 @@
               </div>
             </div>
           </div>
+          <div class="divider m-4 p-4"></div>
         </div>
       </div>
     </section>
@@ -430,7 +487,7 @@
         <footer
           class="row row-cols-1 row-cols-sm-1 row-cols-md-5 mx-0 py-0 my-0"
         >
-          <div class="col my-0 mx-0">
+          <div class="col my-0 mx-0 mb-3">
             <h6>
               <svg
                 aria-hidden="true"

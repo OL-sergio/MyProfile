@@ -15,6 +15,27 @@
     />
 
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
       rel="stylesheet"
       href="../assets/css/styles.css"
     />
@@ -23,52 +44,73 @@
     <section id="header">
       <div class="container">
         <header
-          class="d-flex flex-wrap justify-content-center mx-0 py-4 my-4"
+          class="row row-cols-xxl-3 row-cols-sm-1 px-0 mx-0 mt-4 mb-3 pt-3 d-flex d-flex flex-wrap p-1"
           aria-label="Site header"
         >
-          <a
-            href="../index.html"
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-            aria-label="Home"
+          <div
+            class="d-flex flex-wrap justify-content-center mx-0 py-0 my-lg-0"
           >
-            <span
-              aria-hidden="true"
-              class="header_title_section"
-            ></span>
-            <span
-              class="fs-3 header_title_color fw-bold"
-              href="../index.html"
-              >Sérgio Oliveira </span
-            ><span class="fs-6 header_subtitle_color">/ Programador </span>
-          </a>
-          <div class="nav nav-pills fs-6 mt-2 p-0 gap-3">
-            <div class="nav-item">
+            <div class="row">
               <a
                 href="../index.html"
-                class="nav-link text-uppercase header_no_select_link"
-                >Sobre mim</a
+                class="d-flex align-items-center m-0 p-0 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+                aria-label="Home"
               >
+                <img
+                  aria-hidden="true"
+                  class="header_title_section"
+                  style="margin: 10px"
+                  alt="Logo"
+                />
+                <span
+                  class="fs-3 header_title_color fw-bold"
+                  href="../index.html"
+                  >Sérgio Oliveira </span
+                ><span
+                  class="fs-6 header_subtitle_color"
+                  style="margin-top: 8px"
+                  >/ Programador
+                </span>
+              </a>
             </div>
-            <div class="nav-item">
-              <a
-                href="./curriculum.html "
-                class="nav-link text-uppercase header_no_select_link"
-                >Currículo</a
-              >
-            </div>
-            <div class="nav-item">
-              <a
-                href="./projects.html"
-                class="nav-link text-uppercase"
-                >Projetos</a
-              >
-            </div>
-            <div class="nav-item">
-              <a
-                href="./contact.html"
-                class="nav-link text-uppercase header_no_select_link"
-                >Contacto</a
-              >
+          </div>
+
+          <div class="d-flex flex-grow-0 p-2 m-0 p-0"></div>
+
+          <div
+            class="row row-cols-5 d-flex flex-fill justify-content-evenly align-content-center align-self-center g-1 nav navbar-brand p-1 gap-1"
+          >
+            <div
+              class="d-flex flex-fill justify-content-evenly header_nav_links"
+            >
+              <div class="nav-item">
+                <a
+                  href="../index.html"
+                  class="nav-link text-uppercase"
+                  >Sobre mim</a
+                >
+              </div>
+              <div class="nav-item">
+                <a
+                  href="./curriculum.html"
+                  class="nav-link text-uppercase header_no_select_link"
+                  >Currículo</a
+                >
+              </div>
+              <div class="nav-item">
+                <a
+                  href="./projects.html"
+                  class="nav-link text-uppercase header_no_select_link"
+                  >Projetos</a
+                >
+              </div>
+              <div class="nav-item">
+                <a
+                  href="./contact.html"
+                  class="nav-link text-uppercase header_no_select_link"
+                  >Contacto</a
+                >
+              </div>
             </div>
           </div>
         </header>
@@ -76,7 +118,107 @@
     </section>
 
     <section>
-      <h1>My Projects</h1>
+      <div class="pages_background">
+        <div class="b-divider py-5 my-3"></div>
+        <div class="container py-0 my-2 text-center">
+          <div class="d-flex align-items-center justify-content-center">
+            <span class="align-self-center curriculum_section_title svg_braces">
+            </span>
+            <h6 class="display-6 fw-bold text-body-emphasis">Projetos</h6>
+          </div>
+
+          <div class="col-lg-5 my-5 mx-auto">
+            <p class="mb-0">
+              Welcome to my development portfolio! This repository showcases a
+              diverse range of applications and systems, from ride-sharing
+              platforms to collaborative solutions. Each project demonstrates
+              different aspects of modern mobile and web development.
+            </p>
+          </div>
+        </div>
+
+        <div class="b-example-divider py-2 my-0"></div>
+        <div
+          class="container"
+          style="width: 800px"
+        >
+          <div class="container m-0 p-0">
+            <div
+              class="row p-0 d-flex align-items-center justify-content-center align-content-center border shadow-lg card_background"
+            >
+              <div class="col-lg-6 p-4 m-0">
+                <p
+                  class="d-block d-flex align-items-center m-3 mt-0 pb-0 fw-bold fs-4 lh-1 color_subtitle"
+                >
+                  Uber Clone
+                </p>
+
+                <p
+                  class="d-block d-flex fs-6 align-items-center fw-bold m-3 pb-0"
+                >
+                  Ride Sharing Platform
+                </p>
+
+                <p class="d-block d-flex align-content-center m-3">
+                  An Android application that replicates the core functionality
+                  of Uber, providing a platform for ride-sharing services with
+                  separate interfaces for passengers and drivers.
+                </p>
+                <div
+                  class="d-grid gap-3 d-md-flex justify-content-md-center mb-1 mt-4 mb-lg-2"
+                >
+                  <button
+                    data-bs-toggle="button"
+                    onkeydown="return true;"
+                    onclick="location.href='#';"
+                    class="btn fs-6 btn-primary btn-lg-2 mb-3 px-0 me-md-2 d-flex align-items-center justify-content-center hero_button_left"
+                  >
+                    <img
+                      aria-hidden="true"
+                      class="svg_github"
+                      style="
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 10px;
+                        background-color: #f8f3f3;
+                      "
+                      alt=""
+                    />
+                    Code
+                  </button>
+                  <button
+                    data-bs-toggle="button"
+                    onkeydown="return true;"
+                    onclick="location.href='#';"
+                    class="btn fs-6 btn-outline btn-lg mb-3 px-4 me-md-2 d-flex align-items-center justify-content-center hero_button_right"
+                  >
+                    Download
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-6 offset-lg-5 p-0 m-0 overflow-hidden shadow-lg d-flex align-items-center justify-content-center"
+              >
+                <img
+                  class="shadow-lg rounded-end-2"
+                  src="../assets/images/android_dev.jpg"
+                  alt="android development"
+                  style="
+                    display: block;
+                    width: 640px;
+                    height: 100%;
+                    object-fit: fill;
+                  "
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Divider  -->
+          <div class="b-example-divider py-4 my-1"></div>
+        </div>
+      </div>
     </section>
 
     <section id="footer">
@@ -94,7 +236,7 @@
               2025 por Sérgio Oliveira.
             </h6>
             <!-- Use a free template from Wix -->
-            <div class="row mt-1">
+            <div class="row mt-1 mb-3">
               <h6>
                 Todos os direitos reservados. Template grátis de
                 <a

@@ -36,52 +36,73 @@
     <section id="header">
       <div class="container">
         <header
-          class="d-flex flex-wrap justify-content-center mx-0 py-4 my-4"
+          class="row row-cols-xxl-3 row-cols-sm-1 px-0 mx-0 mt-4 mb-3 pt-3 d-flex d-flex flex-wrap p-1"
           aria-label="Site header"
         >
-          <a
-            href="./index.html"
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-            aria-label="Home"
+          <div
+            class="d-flex flex-wrap justify-content-center mx-0 py-0 my-lg-0"
           >
-            <span
-              aria-hidden="true"
-              class="header_title_section"
-            ></span>
-            <span
-              class="fs-3 header_title_color fw-bold"
-              href="./index.html"
-              >Sérgio Oliveira </span
-            ><span class="fs-6 header_subtitle_color">/ Programador </span>
-          </a>
-          <div class="nav nav-pills fs-6 mt-2 p-0 gap-3">
-            <div class="nav-item">
+            <div class="row">
               <a
                 href="./index.html"
-                class="nav-link text-uppercase"
-                >Sobre mim</a
+                class="d-flex align-items-center m-0 p-0 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+                aria-label="Home"
               >
+                <img
+                  aria-hidden="true"
+                  class="header_title_section"
+                  style="margin: 10px"
+                  alt="Logo"
+                />
+                <span
+                  class="fs-3 header_title_color fw-bold"
+                  href="./index.html"
+                  >Sérgio Oliveira </span
+                ><span
+                  class="fs-6 header_subtitle_color"
+                  style="margin-top: 6px"
+                  >/ Programador
+                </span>
+              </a>
             </div>
-            <div class="nav-item">
-              <a
-                href="./src/curriculum.html"
-                class="nav-link text-uppercase header_no_select_link"
-                >Currículo</a
-              >
-            </div>
-            <div class="nav-item">
-              <a
-                href="./src/projects.html"
-                class="nav-link text-uppercase header_no_select_link"
-                >Projetos</a
-              >
-            </div>
-            <div class="nav-item">
-              <a
-                href="./src/contact.html"
-                class="nav-link text-uppercase header_no_select_link"
-                >Contacto</a
-              >
+          </div>
+
+          <div class="d-flex flex-grow-0 p-2 m-0 p-0"></div>
+
+          <div
+            class="row row-cols-5 d-flex flex-fill justify-content-evenly align-content-center align-self-center g-1 nav navbar-brand p-1 gap-1"
+          >
+            <div
+              class="d-flex flex-fill justify-content-evenly header_nav_links"
+            >
+              <div class="nav-item">
+                <a
+                  href="./index.html"
+                  class="nav-link text-uppercase"
+                  >Sobre mim</a
+                >
+              </div>
+              <div class="nav-item">
+                <a
+                  href="./src/curriculum.html"
+                  class="nav-link text-uppercase header_no_select_link"
+                  >Currículo</a
+                >
+              </div>
+              <div class="nav-item">
+                <a
+                  href="./src/projects.html"
+                  class="nav-link text-uppercase header_no_select_link"
+                  >Projetos</a
+                >
+              </div>
+              <div class="nav-item">
+                <a
+                  href="./src/contact.html"
+                  class="nav-link text-uppercase header_no_select_link"
+                  >Contacto</a
+                >
+              </div>
             </div>
           </div>
         </header>
@@ -98,7 +119,7 @@
               class="col-12 col-sm-5 col-xxl-3 d-flex flex-column align-items-center m-0 p-0 color_profile hero_presentation_size_left"
             >
               <img
-                src="./assets/images/my-profile.png"
+                src="./assets/images/my_profile.png"
                 class="d-flex mx-lg-3 mx-sm-5 px-4 py-5 img-fluid hero_img_config"
                 alt="Bootstrap Themes"
                 loading="lazy"
@@ -106,18 +127,12 @@
               <div
                 class="mt-0 w-100 h-100 d-flex flex-column align-items-center text-center color_profil"
               >
-                <h3 class="col-3 align-items-center mb-4 mt-0 fw-bold">
-                  Sérgio Oliveira
-                </h3>
+                <h3 class="col-3 mb-4 mt-0 fw-bold">Sérgio Oliveira</h3>
                 <span
                   class="my-0 hero_divider"
                   aria-hidden="true"
                 ></span>
-                <h5
-                  class="mt-3 mb-3 d-flex align-items-center hero_text_costume"
-                >
-                  Programador
-                </h5>
+                <h5 class="mt-3 mb-3 d-flex hero_text_costume">Programador</h5>
                 <div
                   class="d-flex flex-column align-items-end mt-5 w-100 hero_icons_sizing"
                 >
@@ -187,7 +202,7 @@
               >
                 Olá
               </p>
-              <h3 class="ms-0 pb-1 mb-2">Meu perfil e meus projetos</h3>
+              <h3 class="ms-0 pb-1 mb-4">Meu perfil e meus projetos</h3>
               <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                 <button
                   data-bs-toggle="button"
@@ -231,11 +246,11 @@
 
     <!-- footer -->
     <section id="footer">
-      <div class="container py-0 my-5 footer_margin_top">
+      <div class="container my-5 footer_margin_top">
         <footer
-          class="row row-cols-1 row-cols-sm-1 row-cols-md-5 mx-0 py-0 my-0"
+          class="row row-cols-1 d-flex justify-content-between align-content-between align-items-stretch row-cols-sm-1 row-cols-md-5 mx-0 py-0 my-0"
         >
-          <div class="col my-0 mx-0">
+          <div class="col mb-3">
             <h6>
               <svg
                 aria-hidden="true"
@@ -245,7 +260,7 @@
               2025 por Sérgio Oliveira.
             </h6>
             <!-- Use a free template from Wix -->
-            <div class="row mt-1">
+            <div class="row flex-grow-1">
               <h6>
                 Todos os direitos reservados. Template grátis de
                 <a
@@ -255,7 +270,7 @@
               </h6>
             </div>
           </div>
-          <div class="row d-flex flex-grow-5"></div>
+          <div class="row d-flex flex-grow-0"></div>
           <div class="col mb-3">
             <h6>Telefone</h6>
             <div class="nav">
@@ -280,7 +295,7 @@
               </div>
             </div>
           </div>
-          <div class="row mb-3">
+          <div class="col mb-5">
             <div>
               <h6>Redes Sociais</h6>
               <div
