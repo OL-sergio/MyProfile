@@ -1,45 +1,51 @@
 :root {
-  --color-accent: rgb(3, 24, 250);
-  --color-text: rgb(149, 124, 98);
-  --color-card: rgb(243, 226, 197);
-  --color-gradient-start: rgb(241, 216, 174);
-  --color-background: rgb(250, 250, 250);
-  --color-accent-secondary: rgb(29, 46, 233);
+  --color-Rich-Blue: rgb(3, 24, 250);
+  --color-Clay-Creek: rgb(149, 124, 98);
+  --color-Dairy-Cream: rgb(243, 226, 197);
+  --color-Light-Apricot: rgb(241, 216, 174);
+  --color-Alabaster: rgb(250, 250, 250);
+  --color-Palatinate-Blue: rgb(29, 46, 233);
 }
 
 body {
-  background-color: var(--color-background);
-  color: var(--color-text);
+  background-color: var(--color-Alabaster);
+  color: var(--color-Clay-Creek);
   font-family: 'Open Sans', sans-serif, Geneva, Verdana, sans-serif;
 }
 
 .gradient {
-  color: var(--color-text);
+  color: var(--color-Clay-Creek);
   background: linear-gradient(
     90deg,
-    var(--color-gradient-start) 34.5%,
-    var(--color-background) 34.5%
+    var(--color-Light-Apricot) 34.5%,
+    var(--color-Alabaster) 34.5%
   );
 }
 
 @media screen and (max-width: 640px) {
   .gradient {
-    background: var(--color-background);
+    background: var(--color-Alabaster);
     background: linear-gradient(
       180deg,
-      var(--color-gradient-start) 40%,
-      var(--color-background) 40%
+      var(--color-Light-Apricot) 40%,
+      var(--color-Alabaster) 40%
     );
   }
 }
 
 .color_profile {
-  background-color: var(--color-card);
-  color: var(--color-text);
+  background-color: var(--color-Dairy-Cream);
+  color: var(--color-Clay-Creek);
 }
 .color_details {
-  background-color: var(--color-background);
+  background-color: var(--color-Alabaster);
 }
+
+.color_form_background {
+  background-color: var(--color-Light-Apricot);
+}
+
+
 
 .header_title_section {
   display: inline-block;
@@ -48,27 +54,27 @@ body {
   padding: 12px;
   margin-bottom: 12px;
   margin-right: 8px;
-  background-color: var(--color-accent);
+  background-color: var(--color-Rich-Blue);
   -webkit-mask: url('../icons/braces.svg') no-repeat center / contain;
   mask: url('../icons/braces.svg') no-repeat center / contain;
 }
 
 .header_title_color {
-  color: var(--color-text);
+  color: var(--color-Clay-Creek);
 }
 
 .header_subtitle_color {
   margin-left: 6px;
   text-transform: uppercase;
-  color: var(--color-text);
+  color: var(--color-Clay-Creek);
   text-decoration: none;
 }
 
 .header_select_link {
-  color: var(--color-accent);
+  color: var(--color-Clay-Creek);
 }
 .header_no_select_link {
-  color: var(--color-text);
+  color: var(--color-Clay-Creek);
 }
 
 .hero_padding {
@@ -91,7 +97,7 @@ body {
 }
 
 .hero_divider {
-  border-top: 5px solid var(--color-accent);
+  border-top: 5px solid var(--color-Rich-Blue);
   width: 70px;
   height: 100%;
 }
@@ -108,7 +114,7 @@ body {
 }
 
 .hero_icons_sizing_flex {
-  background-color: var(--color-background);
+  background-color: var(--color-Alabaster);
   width: 100%;
   height: 70px;
 }
@@ -117,7 +123,7 @@ body {
   display: inline-block;
   width: 18px;
   height: 18px;
-  background-color: var(--color-text);
+  background-color: var(--color-Clay-Creek);
 }
 
 .icons_config_credits {
@@ -127,7 +133,7 @@ body {
   vertical-align: middle;
   width: 20px;
   height: 20px;
-  background-color: var(--color-text);
+  background-color: var(--color-Clay-Creek);
 }
 
 .svg_braces {
@@ -170,7 +176,7 @@ body {
   font-weight: bold;
   text-align: center;
   overflow: hidden;
-  color: var(--color-text);
+  color: var(--color-Clay-Creek);
 }
 
 .hero_button_left {
@@ -179,9 +185,9 @@ body {
   height: 45px;
   text-align: center;
   text-transform: uppercase;
-  background-color: var(--color-accent);
-  outline: 0px solid var(--color-accent);
-  color: var(--color-background);
+  background-color: var(--color-Rich-Blue);
+  outline: 0px solid var(--color-Rich-Blue);
+  color: var(--color-Alabaster);
 }
 .hero_button_right {
   border-radius: 4rem;
@@ -189,17 +195,16 @@ body {
   height: 45px;
   text-align: center;
   text-transform: uppercase;
-  outline: 1px solid var(--color-text);
-  color: var(--color-text);
+  outline: 1px solid var(--color-Clay-Creek);
+  color: var(--color-Clay-Creek);
 }
 
 .footer_text_color {
-  color: var(--color-text);
+  color: var(--color-Clay-Creek);
 }
 
 .footer_margin_top {
   margin-top: 50px;
-  
 }
 
 .footer_icons_config {
@@ -209,11 +214,11 @@ body {
 }
 
 .pages_background {
-  background: var(--color-gradient-start);
+  background: var(--color-Light-Apricot);
 }
 
 .card_background {
-  background: var(--color-background);
+  background: var(--color-Alabaster);
 }
 
 .curriculum_section_title {
@@ -222,16 +227,33 @@ body {
   height: 50px;
   margin-right: 12px;
   margin-bottom: 5px;
-  background-color: var(--color-accent);
+  background-color: var(--color-Rich-Blue);
 }
 
 .curriculum_square_divider {
-  border-top: 14px solid var(--color-accent);
+  border-top: 14px solid var(--color-Rich-Blue);
   width: 14px;
   height: 1rem;
   margin-top: 8px;
 }
 
 .color_subtitle {
-  color: var(--color-accent-secondary);
+  color: var(--color-Palatinate-Blue);
+}
+
+
+.contact_form_section {
+  width: 100%;
+  padding: 10px 0;
+  padding-left: 6px;
+  font-size: 16px;
+  border-radius: 0px;
+
+  color: var(--color-Clay-Creek);
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid var(--color-Clay-Creek);
+  outline: none;
+  background: transparent;
+  
 }

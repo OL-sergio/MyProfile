@@ -84,7 +84,7 @@
               <div class="nav-item">
                 <a
                   href="../index.html"
-                  class="nav-link text-uppercase"
+                  class="nav-link text-uppercase header_no_select_link"
                   >Sobre mim</a
                 >
               </div>
@@ -105,13 +105,165 @@
               <div class="nav-item">
                 <a
                   href="./contact.html"
-                  class="nav-link text-uppercase header_no_select_link"
+                  class="nav-link text-uppercase"
                   >Contacto</a
                 >
               </div>
             </div>
           </div>
         </header>
+      </div>
+    </section>
+
+    <section id="form">
+      <div class="color_form_background">
+        <div class="divider m-4 p-4"></div>
+        <div class="px-5 text-center">
+          <div class="d-flex align-items-center justify-content-center">
+            <span class="align-self-center curriculum_section_title svg_braces">
+            </span>
+            <h6 class="display-6 fw-bold text-body-emphasis">Contacto</h6>
+          </div>
+        </div>
+        <div class="divider m-3 p-3"></div>
+        <div
+          class="container shadow-lg mb-5 color_details"
+          style="width: 700px"
+        >
+          <div class="divider m-4 p-4"></div>
+          <div class="container">
+            <div
+              class="col d-flex align-items-center justify-content-center mb-4"
+            >
+              <div class="col-md-7 col-lg-8">
+                <form
+                  class="needs-validation"
+                  novalidate=""
+                >
+                  <div class="row g-3">
+                    <label class="form-label">
+                      * Demonstração de formulário de contacto. Os dados não
+                      serão armazenados.
+                    </label>
+                    <div class="col-sm-6">
+                      <label
+                        for="firstName"
+                        class="form-label"
+                        >First name
+                        <span class="text-body-secondary">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-control contact_form_section"
+                        id="firstName"
+                        placeholder=""
+                        value=""
+                        required=""
+                      />
+                      <div class="invalid-feedback">
+                        Por favor insira um nome válido.
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <label
+                        for="lastName"
+                        class="form-label"
+                        >Last name
+                        <span class="text-body-secondary"> *</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-control contact_form_section"
+                        id="lastName"
+                        placeholder=""
+                        value=""
+                        required=""
+                      />
+                      <div class="invalid-feedback">
+                        Por favor insira um sobrenome válido.
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <label
+                        for="email"
+                        class="form-label"
+                        >Email
+                        <span class="text-body-secondary"> *</span></label
+                      >
+                      <input
+                        type="email"
+                        class="form-control contact_form_section"
+                        id="email"
+                        placeholder="you@example.com"
+                      />
+                      <div class="invalid-feedback">
+                        Por favor insira um endereço de email válido para
+                        atualizações.
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <label
+                        for="text"
+                        class="form-label"
+                        >Assunto<span class="text-body-secondary">
+                          *</span
+                        ></label
+                      >
+                      <div class="input-group has-validation">
+                        <input
+                          type="text"
+                          class="form-control contact_form_section"
+                          id="description"
+                          placeholder="Descrição do Assunto"
+                          required=""
+                        />
+                        <div class="invalid-feedback">
+                          Por favor insira um assunto.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <label
+                        for="message"
+                        class="form-label"
+                        >Mensagem<span class="text-body-secondary">
+                          *</span
+                        ></label
+                      >
+                      <textarea
+                        type="text"
+                        class="form-control contact_form_section"
+                        id="message"
+                        placeholder=""
+                        required=""
+                        style="
+                          height: 90px;
+                          max-height: 500px;
+                          color: var(149, 124, 98);
+                          letter-spacing: 1px;
+                        "
+                      ></textarea>
+                      <div class="invalid-feedback">
+                        Pro favor insira uma mensagem.
+                      </div>
+
+                      <div class="divider m-3 p-3"></div>
+                      <button
+                        class="w-100 btn btn-primary btn-lg"
+                        type="submit"
+                      >
+                        Enviar Mensagem
+                      </button>
+                    </div>
+                  </div>
+                </form>
+                <div class="divider m-4 p-4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divider m-4 p-4"></div>
       </div>
     </section>
 
