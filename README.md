@@ -6,7 +6,6 @@ MyProfile is a simple personal website built with **HTML**, **CSS**, and **JavaS
 
 - **HTML5** – Structure of the pages.
 - **CSS3** – Custom styles and layout tweaks.
-- **JavaScript** – Interactive behavior on the client side.
 - **Bootstrap** – Main UI framework for layout and components.
 
 ## Bootstrap Framework
