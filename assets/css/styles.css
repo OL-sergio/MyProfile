@@ -5,6 +5,7 @@
   --color-Light-Apricot: rgb(241, 216, 174);
   --color-Alabaster: rgb(250, 250, 250);
   --color-Palatinate-Blue: rgb(29, 46, 233);
+  --color-Black: rgb(0, 0, 0);
 }
 
 body {
@@ -45,15 +46,12 @@ body {
   background-color: var(--color-Light-Apricot);
 }
 
-
-
 .header_title_section {
   display: inline-block;
   width: 34px;
   height: 50px;
   padding: 12px;
-  margin-bottom: 12px;
-  margin-right: 8px;
+  margin: 10px;
   background-color: var(--color-Rich-Blue);
   -webkit-mask: url('../icons/braces.svg') no-repeat center / contain;
   mask: url('../icons/braces.svg') no-repeat center / contain;
@@ -65,6 +63,7 @@ body {
 
 .header_subtitle_color {
   margin-left: 6px;
+  margin-top: 10px;
   text-transform: uppercase;
   color: var(--color-Clay-Creek);
   text-decoration: none;
@@ -169,6 +168,42 @@ body {
   mask: url('../icons/c-circle.svg') no-repeat center / contain;
 }
 
+.img_dev_api {
+  background-image: url('../images/dev_api.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img_dev_web {
+  background-image: url('../images/web_dev.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img_dev_sql {
+  background-image: url('../images/dev_sql.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img_dev_android {
+  background-image: url('../images/android_dev.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .hero_presentation_title {
   width: 260px;
   height: 150px;
@@ -237,10 +272,34 @@ body {
   margin-top: 8px;
 }
 
+.curriculum_hero_subtitle {
+  padding-top: 100px;
+  padding-left: 125px;
+  padding-right: 125px;
+}
+
+.curriculum_hero_subtitle_text {
+  color: var(--color-Black);
+  font-weight: bolder;
+}
+
+li {
+  align-self: center;
+  align-items: center;
+  margin: 8px;
+}
+.curriculum_hero_list_style > li {
+  list-style-image: url('../icons/braces.svg');
+}
+
+.curriculum_hero_abilities {
+  margin-bottom: 10px;
+  margin-left: 12px;
+}
+
 .color_subtitle {
   color: var(--color-Palatinate-Blue);
 }
-
 
 .contact_form_section {
   width: 100%;
@@ -248,12 +307,47 @@ body {
   padding-left: 6px;
   font-size: 16px;
   border-radius: 0px;
-
   color: var(--color-Clay-Creek);
   margin-bottom: 20px;
   border: none;
   border-bottom: 2px solid var(--color-Clay-Creek);
   outline: none;
   background: transparent;
-  
+}
+
+.contact_form_section_message {
+  height: 120px;
+  max-height: 500px;
+  color: var(--color-Clay-Creek);
+  letter-spacing: 1px;
+}
+
+.contact_form_button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 4rem;
+  border: none;
+  outline: none;
+  background-color: var(--color-Rich-Blue);
+  color: var(--color-Alabaster);
+  cursor: pointer;
+}
+
+.projects_image_style {
+  display: inline-block;
+  height: 700px;
+  object-fit: contain;
+}
+
+.projects_hero_buttons_style {
+  width: 25px;
+  height: 25px;
+  background-color: #f8f3f3;
+}
+
+.projects_buttons_size {
+  width: 120px;
+  height: 45px;
 }
